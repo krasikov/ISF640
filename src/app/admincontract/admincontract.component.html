@@ -1,0 +1,34 @@
+<div>
+  admincontract works! <br>
+  <div>
+    GetBalance from address<br>
+    <input #balanceOfAddr type='text'><label>Адресс кошелька</label> <br>
+    <button (click)='balanceOf(balanceOfAddr.value)'>
+      GetBalance
+    </button> <br>
+  </div>
+  <div class="active">
+    Transfer tokens<br>
+    <input #transferTokensAddr type='text'><label>Адрес получателя</label> <br>
+    <input #transferTokensValue type='text'><label>Кол-во токенов</label> <br>
+    <button (click)='transfer(transferTokensAddr.value, transferTokensValue.value)'>
+      Transfer Tokens
+    </button> <br>
+  </div>
+  <div>
+    TransferFrom tokens<br>
+    <input type='text'><label>Адрес получателя</label> <br>
+    <input type='text'><label>Кол-во токенов</label> <br>
+    <button>
+      TransferFrom Tokens
+    </button> <br>
+  </div>
+  <div>
+    Approve<br>
+    <input type='text'><label>Адрес получателя</label> <br>
+    <input type='text'><label>Кол-во токенов</label> <br>
+    <button>
+      Approve
+    </button> <br>
+  </div>
+</div>
